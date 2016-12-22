@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <Button
+        android:text="Ok! Bring me back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/freeze"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="66dp"
+        android:id="@+id/imageView3"
+         />
+
+    <TextView
+        android:text="Stay at home with hot chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:textSize="23dp"
+        android:id="@+id/freeze"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/normal"
+        android:layout_below="@+id/freeze"
+        android:layout_toLeftOf="@+id/freeze"
+        android:layout_toStartOf="@+id/freeze"
+        android:layout_marginTop="35dp"
+        android:id="@+id/imageView5" />
+
+    <TextView
+        android:text="You can play outside without freezing!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignLeft="@+id/freeze"
+        android:layout_alignStart="@+id/freeze"
+        android:textColor="@color/text"
+        android:textSize="23dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/hot"
+        android:layout_below="@+id/normal"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginTop="39dp"
+        android:id="@+id/imageView6" />
+
+    <TextView
+        android:text="Go to the beach it's summer!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hot"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignLeft="@+id/normal"
+        android:layout_alignStart="@+id/normal"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
+        android:textColor="@color/text"/>
+
+    <Button
+        android:text="useless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/noUse" />
+
+
+</RelativeLayout>

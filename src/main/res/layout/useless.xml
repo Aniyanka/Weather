@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:text="I thought I told you it was useless..."
+        android:textSize="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idiot" />
+
+    <TextView
+        android:text="...BUT..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="52dp"
+        android:textStyle="bold"
+        android:id="@+id/but"
+        android:layout_below="@+id/idiot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:srcCompat="@mipmap/snape"
+        android:id="@+id/snape"
+        android:layout_below="@+id/but"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:text="Go back on your own ;)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textView3" />
+
+
+</RelativeLayout>
